@@ -507,6 +507,8 @@ class TumblrRestClient(object):
             valid += ['caption', 'external_url', 'data']
         elif post_type == 'video':
             valid += ['caption', 'embed', 'data']
+        elif post_type == 'answer':
+            valid += ['answer']
 
         return valid
 
